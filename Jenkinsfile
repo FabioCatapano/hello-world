@@ -14,6 +14,7 @@ pipeline {
                 echo "Running Unit Tests"
                 echo "Ciao"
                 echo "Riciao"
+                echo "Riciao"
                 """
             }
         }
