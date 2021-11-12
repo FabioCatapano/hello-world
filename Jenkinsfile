@@ -14,7 +14,6 @@ pipeline {
                 echo "Running Unit Tests"
                 echo "Ciao"
                 echo "Riciao"
-                echo "Riciao"
                 """
             }
         }
@@ -42,5 +41,9 @@ pipeline {
             }
         }
 
-    }   
+    }
+    post{
+        always{
+        input message: "Should we continue ?", ok:"Yes"
+        }
 }
